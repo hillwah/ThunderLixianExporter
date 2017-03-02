@@ -62,6 +62,7 @@ TLE.exporter = {
   },
   "YAAW": function(todown) {
     if (TLE.getConfig("TLE_aria2_jsonrpc")) {
+      var downPath = prompt("Download path:", "/home/plex/");
       show_tip("添加中...到YAAW界面查看是否添加成功");
       var aria2 = new ARIA2(TLE.getConfig("TLE_aria2_jsonrpc"));
       $.each(todown.tasklist, function(n, task) {
@@ -70,7 +71,7 @@ TLE.exporter = {
           var filepath = TLE.safe_title(file.title);
           if (task.tasktype == 0 && task.filelist.length > 1)
             filepath = TLE.safe_title(task.taskname) + "/" + TLE.safe_title(file.title.replace(/\\+\*?/g,"/"));
-          aria2.addUri(file.downurl, {out: filepath, header: 'Cookie: gdriveid='+todown.gdriveid});
+          aria2.addUri(file.downurl, {dir: downPath, out: filepath, header: 'Cookie: gdriveid='+todown.gdriveid});
         });
       });
       hide_tip();
