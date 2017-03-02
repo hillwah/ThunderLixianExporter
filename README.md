@@ -15,15 +15,15 @@ ThunderLixianExporter
 Usage
 -----
 
-安装Userscript
+安装Userscript (UPDATE URL)
 
-> 使用支持userscript的浏览器访问： [ThunderLixianExporter.user.js](https://github.com/binux/ThunderLixianExporter/raw/master/ThunderLixianExporter.user.js)
+> 使用支持userscript的浏览器访问： [ThunderLixianExporter.user.js](https://github.com/hillwah/ThunderLixianExporter/raw/master/ThunderLixianExporter.user.js)
 > 
 > 打开lixian.xunlei.com 迅雷离线页面，开始使用吧！<br />
 
 或，快速体验
 
-> 将「`javascript:void((function(){var d=document;var s=d.createElement('script');s.src='https://cdn.rawgit.com/binux/ThunderLixianExporter/master/ThunderLixianExporter.user.js';s.id='TLE_script';d.body.appendChild(s)})())`」保存在书签栏中。
+> 将「`javascript:void((function(){var d=document;var s=d.createElement('script');s.src='https://cdn.rawgit.com/hillwah/ThunderLixianExporter/master/ThunderLixianExporter.user.js';s.id='TLE_script';d.body.appendChild(s)})())`」保存在书签栏中。
 > 
 > 在lixian.xunlei.com页面**点击书签**，开始使用吧！<br />
 
